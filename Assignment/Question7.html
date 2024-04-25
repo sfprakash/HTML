@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <div style="width: fit-content; font-size: 12px; padding-left: 550;">
+        <fieldset>
+            <table border="3" >
+                <th style=" padding-left: 150px; padding-top: 25px; padding-bottom: 25px; padding-right: 150px;">Login Form</th>
+            </table>
+            <br>
+            <form method="post" action="" enctype="multipart/form-data">
+                <label for="name">Name </label>
+                <input type="text" name="fname" id="name" placeholder="FirstName">
+                <input type="text" name="lname" id="name" placeholder="LastName">
+                <br><br>
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <br><br>
+                <label for="phoneNumber">Phone Number </label>
+                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="10-digit number" min="670000000000" max="9999999999">
+                <br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <br><br>
+                <label>Gender</label><br>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Not wish to Disclose</label>
+                <br><br>
+                <label for="address">Address :</label><br>
+                <textarea  id="address" name="address" cols="25" rows="7"></textarea>
+                <br><br>
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date" name="dob" id="dob">
+                <br><br>
+                <label for="time">Time</label><br>
+                <input type="time" name="time" id="time">
+                <br><br>
+                <label>Language</label><br>
+                <input type="checkbox" name="language[]" id="tamil" value="tamil" >
+                <label for="tamil">Tamil</label><br>
+                <input type="checkbox" name="language[]" id="english" value="english" >
+                <label for="english">English</label><br>
+                <input type="checkbox" name="language[]" id="french" value="french" >
+                <label for="french">French</label>
+                <br><br>
+                <label for="fieldOfInterest">Select Your field of Interest :</label><br>
+                <select id="fieldOfInterest">
+                    <option value=""></option>
+                    <option value="music">Music</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="football">Football</option>
+                    <option value="batminton">Batminton</option>
+                </select>
+                <br><br>
+                <label for="photo">Upload your Photo</label><br>
+                <input type="file">
+                <br><br>
+                <input type="Button" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </fieldset>
+        </div>
+    </body>
+</html>
